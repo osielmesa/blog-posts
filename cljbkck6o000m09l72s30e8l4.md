@@ -68,3 +68,6 @@ This is the 2nd post ([previous post here](https://osiel.hashnode.dev/12-react-a
     Authentication and authorization in React applications can be handled by implementing authentication workflows and mechanisms to ensure that only authenticated and authorized users can access certain parts of the application, protecting routes or components based on user roles or permissions. Libraries like [OAuth](https://auth0.com/) or [Firebase Authentication](https://firebase.google.com/docs/auth) can be used for implementing authentication mechanisms.
     
     It's important to follow security best practices when implementing authentication and authorization in React applications. These include properly storing (if needed) and securing user credentials, implementing measures to prevent common vulnerabilities like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF), and using secure communication protocols like [HTTPS](https://en.wikipedia.org/wiki/HTTPS).
+    
+
+Previous post can be found here: [12 React and React Native questions and answers - 1st post.](https://osiel.hashnode.dev/12-react-and-react-native-questions-and-answers-1st-post)
