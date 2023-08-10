@@ -8,7 +8,7 @@ tags: react-native, questions, reactjs
 
 ---
 
-This is the 3rd post ([**previous post here**](https://osiel.hashnode.dev/12-react-and-react-native-questions-and-answers-2nd-post)) from a series where I will cover 12 react and react native common questions and answers every week until we reach 60 of them. After reaching that goal I will continue growing this list but from time to time. Useful links can be found in the answers. Corrections and suggestions are more than welcome.
+This is the 3rd post ([**previous post here**](https://osiel.hashnode.dev/12-react-and-react-native-questions-and-answers-2nd-post)**,** [**next post here**](https://osiel.hashnode.dev/12-react-and-react-native-questions-and-answers-4th-post)) from a series where I will cover 12 react and react native common questions and answers every week until we reach 60 of them. After reaching that goal I will continue growing this list but from time to time. Useful links can be found in the answers. Corrections and suggestions are more than welcome.
 
 1. What is the purpose of React Router in React?
     
@@ -66,3 +66,5 @@ This is the 3rd post ([**previous post here**](https://osiel.hashnode.dev/12-rea
     
 
 Previous post can be found here: [**12 React and React Native questions and answers - 2nd post.**](https://osiel.hashnode.dev/12-react-and-react-native-questions-and-answers-2nd-post)
+
+Next post can be found here: [**12 React and React Native questions and answers - 4th post**](https://osiel.hashnode.dev/12-react-and-react-native-questions-and-answers-4th-post)
