@@ -2,7 +2,7 @@
 title: "Creating an Augmented Reality viewer using Native Modules - part  2: iOS (Swift)"
 seoTitle: "Augmented Reality viewer using Native Modules: iOS (swift)"
 seoDescription: "Small React Native (RN) demo that has a list of AR file items. Pressed item will be displayed in AR Quicklook using native code in Swift."
-datePublished: Wed Jun 28 2023 08:03:11 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-06-28T08:03:11.714Z
 cuid: cljffj65e00030aladnygdo02
 slug: creating-an-augmented-reality-viewer-using-native-modules-part-2-ios-swift
 tags: swift, react-native, augmented-reality, nativemodules
