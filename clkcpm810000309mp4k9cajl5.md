@@ -1,7 +1,7 @@
 ---
 title: "Optimising React & React Native Apps. Part 1: Controlled vs Uncontrolled Component."
 seoDescription: "Performance issue in react and react native apps. Controlled component 's problem and how to fix it."
-datePublished: Fri Jul 21 2023 15:01:54 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-07-21T15:01:54.085Z
 cuid: clkcpm810000309mp4k9cajl5
 slug: optimising-react-react-native-apps-part-1-controlled-vs-uncontrolled-component
 tags: performance, react-native, reactjs, controlled-and-uncontrolled-components
