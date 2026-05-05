@@ -2,7 +2,7 @@
 title: "Creating an Augmented Reality viewer using Native Modules - part 1:  Android"
 seoTitle: "Augmented Reality in React Native with Native Modules - Android"
 seoDescription: "This React Native demo shows AR assets in Augmented Reality using Scene Viewer without any third-party library."
-datePublished: Thu Jun 22 2023 17:03:36 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-06-22T17:03:36.029Z
 cuid: clj7e70wt00010amsdlnq4yoy
 slug: creating-an-augmented-reality-viewer-using-native-modules-part-1-android
 tags: react-native, android, augmented-reality, sceneviewer, nativemodules
