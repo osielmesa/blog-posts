@@ -1,7 +1,7 @@
 ---
 title: "Local Storage in React Native"
 seoDescription: "Analysis about local storage usage in react native based on security and data complexity."
-datePublished: Fri Jul 07 2023 16:29:11 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-07-07T16:29:11.954Z
 cuid: cljsskk9e000u09mqennrcq17
 slug: local-storage-in-react-native
 tags: react-native, security, localstorage, sensitive-data
