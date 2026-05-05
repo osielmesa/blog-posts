@@ -2,7 +2,7 @@
 title: "12 React and React Native questions and answers - 2nd post"
 seoTitle: "React and React Native questions and answers"
 seoDescription: "12 common questions and answers of react and react-native with useful links for more details."
-datePublished: Sun Jun 25 2023 15:06:56 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-06-25T15:06:56.688Z
 cuid: cljbkck6o000m09l72s30e8l4
 slug: 12-react-and-react-native-questions-and-answers-2nd-post
 tags: react-native, reactjs
