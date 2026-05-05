@@ -15,44 +15,52 @@ That's exactly what the **Figma MCP server** enables. MCP (Model Context Protoco
 
 In this guide, you'll learn two ways to set it up, when to use each one, and how to get the most out of the workflow.
 
----
+* * *
 
 ## What Can You Do With It?
 
 Once connected, Claude can:
 
-- **Read your Figma designs** — components, variables, layout data, auto layout, and design tokens
-- **Generate code from selected frames** — useful when building new features from a design spec
-- **Work with your design system** — align generated code with your real components via Code Connect
-- **Capture live UIs and paste them into Figma** — turn a running app screen into an editable Figma frame
-- **Write directly to the Figma canvas** — create frames, components, and variables from Claude (remote server, currently in beta)
+*   **Read your Figma designs** — components, variables, layout data, auto layout, and design tokens
+    
+*   **Generate code from selected frames** — useful when building new features from a design spec
+    
+*   **Work with your design system** — align generated code with your real components via Code Connect
+    
+*   **Capture live UIs and paste them into Figma** — turn a running app screen into an editable Figma frame
+    
+*   **Write directly to the Figma canvas** — create frames, components, and variables from Claude (remote server, currently in beta)
+    
 
----
+* * *
 
 ## Prerequisites
 
 Before starting, make sure you have:
 
-- **Claude Code** installed: `npm install -g @anthropic-ai/claude-code`
-- **Figma Desktop App** (the web version is not compatible with the desktop MCP server)
-- A **Claude Pro or Max** account
+*   **Claude Code** installed: `npm install -g @anthropic-ai/claude-code`
+    
+*   **Figma Desktop App** (the web version is not compatible with the desktop MCP server)
+    
+*   A **Claude Pro or Max** account
+    
 
 > **Recommendation:** Use the official plugin (Path 1) — it has the broadest set of features and the simplest setup. The open-source alternative is useful if you need a scriptable or CI-friendly approach.
 
----
+* * *
 
 ## Two Setup Paths
 
 There are two ways to connect Claude to Figma. Pick the one that fits your situation:
 
-| | Remote Plugin (Official) | Open-Source (figma-developer-mcp) |
-|---|---|---|
+|  | Remote Plugin (Official) | Open-Source (figma-developer-mcp) |
+| --- | --- | --- |
 | Setup | Plugin install | npm + API key |
 | Features | Full (write to canvas, code gen, live capture) | Read-only (code gen from files) |
 | Requires desktop app | No | No |
 | Best for | Most users | CI/scripting |
 
----
+* * *
 
 ## Path 1: Official Figma Plugin (Recommended)
 
@@ -72,12 +80,18 @@ Press Enter and restart Claude Code.
 
 Once Claude Code restarts:
 
-1. Type `/plugin` and press Enter to open the Plugin marketplace
-2. Navigate to the **Installed** tab
-3. Position in the `figma` entry — this opens a submenu with options like Uninstall, Auth, etc.
-4. Select **Auth** (not the parent option — that one shows management actions)
-5. A browser page will open → click **Allow Access**
-6. Return to your terminal and verify the server shows as **connected**
+1.  Type `/plugin` and press Enter to open the Plugin marketplace
+    
+2.  Navigate to the **Installed** tab
+    
+3.  Position in the `figma` entry — this opens a submenu with options like Uninstall, Auth, etc.
+    
+4.  Select **Auth** (not the parent option — that one shows management actions)
+    
+5.  A browser page will open → click **Allow Access**
+    
+6.  Return to your terminal and verify the server shows as **connected**
+    
 
 That's it. You're ready to use it.
 
@@ -85,7 +99,7 @@ That's it. You're ready to use it.
 
 You can run `/mcp` in Claude to see your connected MCP servers and confirm Figma is listed.
 
----
+* * *
 
 ## Path 2: Desktop MCP Server
 
@@ -93,11 +107,16 @@ If you prefer to run the server locally through the Figma desktop app:
 
 ### Step 1: Enable the server in Figma
 
-1. Open the **Figma Desktop App** and update it to the latest version
-2. Open any design file
-3. Switch to **Dev Mode** (with nothing selected)
-4. In the right sidebar, find the **MCP server toggle** and enable it
-5. You'll see the local address: `http://127.0.0.1:3845/mcp`
+1.  Open the **Figma Desktop App** and update it to the latest version
+    
+2.  Open any design file
+    
+3.  Switch to **Dev Mode** (with nothing selected)
+    
+4.  In the right sidebar, find the **MCP server toggle** and enable it
+    
+5.  You'll see the local address: `http://127.0.0.1:3845/mcp`
+    
 
 ### Step 2: Register with Claude Code
 
@@ -115,8 +134,7 @@ claude mcp list
 
 You should see `figma-desktop` in the list.
 
-
----
+* * *
 
 ## Path 3: Open-Source Alternative
 
@@ -130,9 +148,12 @@ npm install -g figma-developer-mcp
 
 ### Step 2: Generate a Figma API key
 
-1. Go to **Figma Account Settings** → **Personal Access Tokens**
-2. Click **Generate new token**
-3. Copy the token
+1.  Go to **Figma Account Settings** → **Personal Access Tokens**
+    
+2.  Click **Generate new token**
+    
+3.  Copy the token
+    
 
 ### Step 3: Create the config file
 
@@ -156,7 +177,7 @@ In your project root, create a `.mcp.json` file:
 
 Open Claude Code in your project folder, type `/mcp`, and confirm the server is listed and connected.
 
----
+* * *
 
 ## How to Use It: One Prompt, App + Design
 
@@ -166,7 +187,7 @@ This is where it gets interesting. With Claude connected to Figma, you can go fr
 
 Let's say you want to build a simple habit tracker. You open Claude Code (with the Figma MCP connected) and type:
 
-```
+```plaintext
 I want to build a React Native Expo app called "HabitLoop" — a minimal daily habit tracker.
 
 Step 1 — Design in Figma first:
@@ -190,7 +211,7 @@ That's it. One prompt. Here's what Claude does:
 
 **On the code side**, it scaffolds the Expo project and generates the screens:
 
-```
+```plaintext
 HabitLoop/
 ├── App.tsx
 ├── index.ts
@@ -299,16 +320,20 @@ Note how the styles reference design tokens from `constants/theme.ts` (`colors.c
 
 **On the Figma side**, Claude uses the MCP to write directly to the canvas:
 
-- Creates a `HabitLoop` file with two frames: `Home` and `Add Habit Modal`
-- The Home frame has an indigo header, three sample habit cards with auto layout, and a floating action button
-- The modal frame has an input field, cancel/save buttons, and the same design tokens (colors, corner radius, spacing)
-- Everything is properly named in the layers panel so a designer can pick it up and work with it
+*   Creates a `HabitLoop` file with two frames: `Home` and `Add Habit Modal`
+    
+*   The Home frame has an indigo header, three sample habit cards with auto layout, and a floating action button
+    
+*   The modal frame has an input field, cancel/save buttons, and the same design tokens (colors, corner radius, spacing)
+    
+*   Everything is properly named in the layers panel so a designer can pick it up and work with it
+    
 
-![HabitLoop Figma file — Home Screen and Add Habit Modal frames generated by Claude](./figma.png)
+<img src="https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/figma.png?raw=true" alt="HabitLoop Figma file — Home Screen and Add Habit Modal frames generated by Claude" width="320" />
 
 The result is a design and a codebase that are in sync from day one — same colors, same spacing, same component structure.
 
----
+* * *
 
 ### Run the app
 
@@ -319,32 +344,37 @@ npx expo start
 
 Scan the QR code with Expo Go and you'll see the app running on your phone, matching the Figma frames Claude just created.
 
-<img src="./mob1.PNG" alt="HabitLoop — Home screen with habit list and progress bar" width="320" />
+<img src="https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob1.PNG?raw=true" alt="HabitLoop — Home screen with habit list and progress bar" height="320" />
 
-<img src="./mob2.PNG" alt="HabitLoop — Add Habit modal with emoji picker" width="320" />
+<img src="https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob2.PNG?raw=true" alt="HabitLoop — Add Habit modal with emoji picker" height="320" />
 
----
+* * *
 
 ### What just happened?
 
 Claude used two channels at the same time:
 
-1. **File system** — scaffolded the Expo project, wrote TypeScript components and hooks
-2. **Figma MCP** — opened a new Figma file and placed frames, components, and design tokens on the canvas
+1.  **File system** — scaffolded the Expo project, wrote TypeScript components and hooks
+    
+2.  **Figma MCP** — opened a new Figma file and placed frames, components, and design tokens on the canvas
+    
 
 Neither required you to switch tools, copy-paste specs, or manually align design decisions with code. The prompt was the single source of truth.
 
----
+* * *
 
 ### Taking it further
 
 Once you have the base app and the Figma file, the loop becomes very fast:
 
-- **Iterate on the design** in Figma → select the updated frame → ask Claude to regenerate the component
-- **Add a new screen** by prompting Claude to both code it and add the corresponding frame to Figma
-- **Adjust the design tokens** (colors, spacing) in one place and ask Claude to sync both files
+*   **Iterate on the design** in Figma → select the updated frame → ask Claude to regenerate the component
+    
+*   **Add a new screen** by prompting Claude to both code it and add the corresponding frame to Figma
+    
+*   **Adjust the design tokens** (colors, spacing) in one place and ask Claude to sync both files
+    
 
-```
+```plaintext
 Update the accent color from indigo to violet (#7c3aed) in both the app theme and the Figma variables.
 ```
 
@@ -379,12 +409,12 @@ There are public repositories of community-built skills you can browse and insta
 
 The best part is you don't have to set these up manually upfront. You can just ask Claude Code directly while you're working:
 
-```
+```plaintext
 Remember that in this project we always use StyleSheet.create,
 never inline styles. Add it as a rule.
 ```
 
-```
+```plaintext
 Save a note that the Habit type lives in hooks/useHabits.ts
 and uses completedToday, not done.
 ```
@@ -393,18 +423,18 @@ Claude will write the rule or memory entry on the spot. Over time, the project a
 
 Together these tools turn Claude from a generic code generator into something that knows your project, your conventions, and your design system.
 
----
+* * *
 
 ## Troubleshooting
 
 | Issue | Fix |
-|---|---|
+| --- | --- |
 | Server not appearing in `/mcp` | Fully restart Claude Code |
 | Authentication error | Run `/mcp`, select the server, choose **Authenticate** |
 | Wrong code or shapes generated | Be more explicit in your prompt, or switch from link-based to selection-based |
 | Desktop server not connecting | Make sure Dev Mode is active and nothing is selected in Figma before enabling the toggle |
 
----
+* * *
 
 ## Wrapping Up
 
@@ -416,6 +446,6 @@ For most people, the **official plugin (Path 1)** is the right starting point. I
 
 If you have any corrections or suggestions, they're more than welcome. Happy coding! 🚀
 
----
+* * *
 
-*Based on the video [Connect Claude to Figma with MCP](https://www.youtube.com/watch?v=aQ3vOzsuHIs) and the [official Figma documentation](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server).*
+*Based on the video* [*Connect Claude to Figma with MCP*](https://www.youtube.com/watch?v=aQ3vOzsuHIs) *and the* [*official Figma documentation*](https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Figma-MCP-server)*.*
