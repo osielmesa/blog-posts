@@ -344,9 +344,8 @@ npx expo start
 
 Scan the QR code with Expo Go and you'll see the app running on your phone, matching the Figma frames Claude just created.
 
-| ![](https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob1.PNG?raw=true) | ![](https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob2.PNG?raw=true)
-
-* * *
+| ![](https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob1.PNG?raw=true) | ![](https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob2.PNG?raw=true) |
+|---|---|
 
 ### What just happened?
 
