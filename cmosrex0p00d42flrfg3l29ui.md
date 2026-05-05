@@ -11,9 +11,9 @@ tags: ai, react-native, figma, ai-tool, claude, mcp
 
 If you've been using Claude Code to build UIs, you've probably wondered: *what if Claude could see my Figma designs directly?*
 
-That's exactly what the **Figma MCP server** enables. MCP (Model Context Protocol) acts as a bridge between Claude and Figma, giving Claude structured access to your design files — components, variables, layouts, and more — so it can generate code that actually matches your designs.
+That's exactly what the **Figma MCP server** enables. MCP (Model Context Protocol) acts as a bridge between Claude and Figma, giving Claude structured access to your design files — components, variables, layouts, and more — so it can generate code that actually matches your designs and it can generate designs from your own ideas.
 
-In this guide, you'll learn two ways to set it up, when to use each one, and how to get the most out of the workflow.
+In this guide, you'll learn three ways to set it up, when to use each one, and how to get the most out of the workflow.
 
 * * *
 
