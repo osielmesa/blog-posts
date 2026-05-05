@@ -344,7 +344,8 @@ npx expo start
 
 Scan the QR code with Expo Go and you'll see the app running on your phone, matching the Figma frames Claude just created.
 
-<img src="https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob1.PNG?raw=true" alt="HabitLoop — Home screen with habit list and progress bar" width="50" /><img src="https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob2.PNG?raw=true" alt="HabitLoop — Add Habit modal with emoji picker" width="50" />
+<img src="https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob1.PNG?raw=true" alt="HabitLoop — Home screen with habit list and progress bar" width="320" />
+<img src="https://github.com/osielmesa/blog-posts/blob/main/drafts/claude+figma/mob2.PNG?raw=true" alt="HabitLoop — Add Habit modal with emoji picker" width="320" />
 
 * * *
 
