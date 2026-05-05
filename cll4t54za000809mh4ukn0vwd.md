@@ -1,7 +1,7 @@
 ---
 title: "12 React and React Native questions and answers - 4th post"
 seoDescription: "React and React Native questions and answers"
-datePublished: Thu Aug 10 2023 06:58:08 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-08-10T06:58:08.374Z
 cuid: cll4t54za000809mh4ukn0vwd
 slug: 12-react-and-react-native-questions-and-answers-4th-post
 tags: react-native, questions, reactjs, answers
